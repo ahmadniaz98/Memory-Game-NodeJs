@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Malarvadi Memory Game</title>
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Malarvadi Memory Game</h1>
+        <button id="new-game-btn">New Game</button>
+        <label class="switch" id="sliderhide">
+            <input type="checkbox" id="orderToggle" checked>
+            <span class="slider"></span>
+        </label>
+        <select id="image-count">
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+        </select>
+        <div id="timer" style="display: none;">01:00</div>
+        <div id="game-board">
+        </div>
+        <div id="image-choices">
+        </div>
+        <button id="submit-btn" disabled>Submit</button>
+        <div id="score" style="display: none;">Score: 0/10</div>
+        <div id="correct-order">
+        </div>
+        <button id="restart-game-btn" onclick="window.location.reload()" style="display: none;">Restart Game</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
