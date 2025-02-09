@@ -84,7 +84,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     function startMemorizationTimer() {
-        timeLeft = 5;
+        timeLeft = 60;
         timerDisplay.style.display = 'block';
         timerDisplay.textContent = '01:00';
         imageChoicesContainer.style.display = 'none';
