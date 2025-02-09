@@ -9,23 +9,3 @@ services:
     envVars:
       - key: NODE_ENV
         value: production
-    routes:
-      - type: static
-        path: '/favicon.ico'
-        destination: '/public/favicon.ico'
-      - type: static
-        path: '/images/*'
-        destination: '/public/images/*'
-      - type: static
-        path: '/style.css'
-        destination: '/public/style.css'
-      - type: static
-        path: '/script.js'
-        destination: '/public/script.js'
-
-    # Optional: Add a health check if needed
-    healthCheckPath: '/'
-    healthCheckIntervalSeconds: 30
-    healthCheckTimeoutSeconds: 5
-    healthCheckRetries: 3
-    healthCheckGracePeriodSeconds: 120
