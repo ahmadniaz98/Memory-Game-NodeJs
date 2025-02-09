@@ -1,6 +1,6 @@
 services:
   - type: web
-    name: malarvadi-memory-game
+    name: memory-game
     env: node
     plan: free
     buildCommand: 'npm install'
