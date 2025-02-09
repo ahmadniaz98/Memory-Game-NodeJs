@@ -5,7 +5,6 @@ services:
     plan: free
     buildCommand: 'npm install'
     startCommand: 'node server.js'
-    staticPublishPath: './public'  # Serve files from the 'public' directory
     envVars:
       - key: NODE_ENV
         value: production
